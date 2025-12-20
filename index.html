@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OffMap Travels - Discover Hidden Places Around India</title>
+    <link rel="icon" href="favicon.webp" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <i class="fa-solid fa-mountain-sun fa-lg text-warning"></i>
+                OffMap Travels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Home.webp') center/cover; min-height:85vh;">
+        <div class="text-white text-center px-3">
+            <h1 class="display-4 fw-bold mb-3">Discover Hidden Places in India</h1>
+            <p class="lead mb-4">Unexplored, breathtaking destinations await you.</p>
+            <a href="#booking" class="btn btn-warning btn-lg px-5 shadow fw-bold">Book My Place</a>
+        </div>
+    </section>
+
+    <section class="container py-5" id="destinations">
+        <h2 class="mb-5 text-center fw-bold">Hidden Destinations</h2>
+        <div id="destinationsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Majuli 1.webp" class="d-block w-100" alt="Majuli, Assam" style="max-height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5 class="fw-bold">Majuli, Assam</h5>
+                        <p class="small">World's largest river island, known for culture and serenity.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Kumta 1.webp" class="d-block w-100" alt="Kumta Backwaters, Karnataka" style="max-height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5 class="fw-bold">Kumta Backwaters, Karnataka</h5>
+                        <p class="small">Untouched backwater beauty offering a peaceful escape.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Khajjiar 1.webp" class="d-block w-100" alt="Khajjiar, Himachal Pradesh" style="max-height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5 class="fw-bold">Khajjiar, Himachal Pradesh</h5>
+                        <p class="small">The 'Mini Switzerland of India' with stunning cedar forests.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Badami 1.webp" class="d-block w-100" alt="Badami Heritage Circuit" style="max-height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5 class="fw-bold">Badami Heritage Circuit</h5>
+                        <p class="small">Ancient rock-cut temples and Chalukya dynasty architecture.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="River 1.webp" class="d-block w-100" alt="Brahmaputra River Banks" style="max-height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5 class="fw-bold">Brahmaputra River Banks</h5>
+                        <p class="small">Quiet sunset spots along the banks, away from the crowds.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Tenga 1.webp" class="d-block w-100" alt="Tengapania" style="max-height:400px;object-fit:cover;">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                        <h5 class="fw-bold">Tengapania</h5>
+                        <p class="small">A peaceful spot with a beautiful temple and river views.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+ 
+        <div id="destinationsCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner" id="destinationsCarouselInner">
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      
+        <div class="row g-4" id="destinationsGrid">
+            <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                    <img src="Majuli 1.webp" class="card-img-top gallery-img" alt="Majuli, Assam">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Majuli, Assam</h5>
+                        <p class="text-muted small">World's largest river island, known for culture and serenity.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-primary mb-2">₹2200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                    <img src="Kumta 1.webp" class="card-img-top gallery-img" alt="Kumta Backwaters, Karnataka">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Kumta Backwaters, Karnataka</h5>
+                        <p class="text-muted small">Untouched backwater beauty offering a peaceful escape.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-primary mb-2">₹1800</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                    <img src="Khajjiar 1.webp" class="card-img-top gallery-img" alt="Khajjiar, Himachal Pradesh">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Khajjiar, Himachal Pradesh</h5>
+                        <p class="text-muted small">The 'Mini Switzerland of India' with stunning cedar forests.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-primary mb-2">₹3600</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                    <img src="Badami 1.webp" class="card-img-top gallery-img" alt="Badami Heritage Circuit">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Badami Heritage Circuit</h5>
+                        <p class="text-muted small">Ancient rock-cut temples and Chalukya dynasty architecture.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-primary mb-2">₹3000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="River 1.webp" class="card-img-top gallery-img" alt="Brahmaputra River Banks">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Brahmaputra River Banks</h5>
+                        <p class="text-muted small">Quiet sunset spots along the banks, away from the crowds.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-primary mb-2">₹1500</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                    <div class="card h-100">
+                    <img src="Tenga 1.webp" class="card-img-top gallery-img" alt="Tengapania" >
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="fw-bold">Tengapania</h5>
+                        <p class="text-muted small">A peaceful spot with a beautiful temple and river views.</p>
+                        <div class="mt-auto">
+                            <p class="fw-bold text-primary mb-2">₹1700</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="destinationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Destination Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div id="modalGallery"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <h3 id="modalName" class="fw-bold text-primary"></h3>
+                            <p id="modalDescription" class="text-muted"></p>
+                            <ul class="list-unstyled">
+                                <li><strong>Location:</strong> <span id="modalLocation"></span></li>
+                                <li><strong>Best Time:</strong> <span id="modalBestTime"></span></li>
+                                <li><strong>Starting Price:</strong> <span class="text-success fw-bold">₹<span id="modalPrice"></span></span></li>
+                            </ul>
+                            <button class="btn btn-success w-100 mt-3" data-bs-dismiss="modal" onclick="scrollToBooking()">Book This Trip</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container py-5 border-top" id="testimonials">
+        <h2 class="mb-5 text-center fw-bold">What Our Travelers Say</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <div class="text-warning mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted small">"Absolutely magical! The destinations exceeded all expectations."</p>
+                    <h6 class="fw-bold mb-0">- Ajay</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <div class="text-warning mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted small">"A unique experience, far from the usual tourist spots."</p>
+                    <h6 class="fw-bold mb-0">- Sreeraj</h6>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center">
+                    <div class="text-warning mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-muted small">"The booking process was easy and the trip was unforgettable."</p>
+                    <h6 class="fw-bold mb-0">- Jyothis</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container py-5 bg-white shadow-sm rounded mb-5" id="booking">
+        <h2 class="mb-4 text-center fw-bold">Plan Your Escape</h2>
+        <form id="bookingForm" class="row g-3 mx-auto" style="max-width: 700px;">
+            <div class="col-md-6">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Preferred Date</label>
+                <input type="date" class="form-control" id="date" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Number of People</label>
+                <input type="number" class="form-control" id="people" min="1" required>
+            </div>
+            <div class="col-12">
+                <label class="form-label">Destination</label>
+                <select class="form-select" id="destination" required>
+                    <option value="">Select a place...</option>
+                    <option value="Majuli, Assam">Majuli, Assam</option>
+                    <option value="Kumta Backwaters, Karnataka">Kumta Backwaters, Karnataka</option>
+                    <option value="Khajjiar, Himachal Pradesh">Khajjiar, Himachal Pradesh</option>
+                    <option value="Badami Heritage Circuit">Badami Heritage Circuit</option>
+                    <option value="Brahmaputra River Banks">Brahmaputra River Banks</option>
+                    <option value="Tengapania">Tengapania</option>
+                </select>
+            </div>
+            
+            <div class="col-12 text-center mt-4">
+                <button type="submit" id="submitBtn" class="btn btn-dark px-5 py-2">Submit Booking Request</button>
+            </div>
+            <div id="bookingSuccess" class="alert alert-success d-none mt-3">
+                Booking successful! We will contact you shortly.
+            </div>
+            
+        </form>
+    </section>
+
+    <footer class="footer py-5" id="footer">
+        <div class="container text-center">
+            <h2 class="text-primary mb-4"><i class="fa-solid fa-paper-plane me-2"></i>Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <p><i class="fa-solid fa-envelope text-primary me-2"></i><a href="mailto:adheebhusain5@gmail.com">info@offmaptravels.com</a></p>
+                    <p><i class="fa-solid fa-phone text-primary me-2"></i><a href="tel:+91 9526956331">+91 9526956331</a></p>
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="https://www.facebook.com/share/1BNDoGhSu8/" target="_blank"><i class="fab fa-facebook fa-2xl"></i></a>
+                        <a href="https://www.instagram.com/hu_z_ain__/" target="_blank"><i class="fab fa-instagram fa-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/adheeb-husain-80b263390" target="_blank"><i class="fab fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-5 mb-0 opacity-50 small">&copy; 2025 OffMap Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.getElementById('bookingForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const btn = document.getElementById('submitBtn');
+                const nameInput = document.getElementById('name');
+                const nameValue = nameInput.value.trim();
+                if (!/^[A-Za-z]+$/.test(nameValue)) {
+                    alert('Name must contain only letters (no numbers or spaces).');
+                    nameInput.focus();
+                    return;
+                }
+                btn.disabled = true;
+                btn.textContent = 'Sending...';
+                const data = {
+                    access_key: '8dab817d-0918-455c-8086-c3ce73df55bb',
+                    name: nameValue,
+                    email: document.getElementById('email').value,
+                    date: document.getElementById('date').value,
+                    people: document.getElementById('people').value,
+                    destination: document.getElementById('destination').value
+                   
+                };
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                })
+                .then(res => res.json())
+                .then(res => {
+                    if (res.success) {
+                        document.getElementById('bookingSuccess').classList.remove('d-none');
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 1500);
+                    } else {
+                        alert("Submission failed. Please try again.");
+                    }
+                })
+                .catch(() => alert("Network error. Please try again later."))
+                .finally(() => {
+                    btn.disabled = false;
+                    btn.textContent = 'Submit Booking Request';
+                });
+            });
+        }
+    });
+    </script>
+    
+</body>
+</html>
