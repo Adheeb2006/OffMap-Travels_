@@ -318,7 +318,7 @@
                 const btn = document.getElementById('submitBtn');
                 const nameInput = document.getElementById('name');
                 const nameValue = nameInput.value.trim();
-                if (!/^[A-Za-z]+$/.test(nameValue)) {
+                if (!/^[A-Za-z\s]+$/.test(nameValue)) {
                     alert('Name must contain only letters (no numbers or spaces).');
                     nameInput.focus();
                     return;
@@ -363,3 +363,4 @@
 </body>
 
 </html>
+
